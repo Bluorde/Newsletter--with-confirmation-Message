@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <title>Frontend Mentor | Newsletter sign-up form with success message</title>
+  <link rel ="stylesheet" href="styles.css"/>
+</head>
+<body>
+  <main>
+    <div class="container">
+      <article class="main-card">
+        <section class="form-content">
+          <h1>Stay updated!</h1>
+          <p>Join 60,000+ product managers receiving monthly updates on:</p>
+          <ul>
+            <li>Product discovery and building what matters</li>
+            <li>Measuring to ensure updates are a success</li>
+            <li>And much more!</li>
+          </ul>
+          <form novalidate>
+            <label for="email-entry">Email address <span class="error-msg"></span></label><br>
+            <input class="email-box" type="email" id="email-field" spellcheck="false" onkeyup="genericRun()"><br>
+            <input type="submit" class="submit-btn" id="submit-btn" value="Subscribe to monthly newsletter" onclick="window.location.href= './confirmation/confirmation.html'">
+          </form>
+        </section>
+        <section class="load-image">
+          <img class="graphic" src="./assets/images/illustration-sign-up-desktop.svg" alt="Computer Window">
+        </section>
+      </article>
+    </div>
+  </main>
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Bluorde</a>.
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Confirmation Message</title>
+    <link rel="stylesheet" href="confirmation-styles.css">
+</head>
+<body>
+    <main>
+        <div class="container">
+            <article class="main-card">
+                <section class="confirmation-msg">
+                    <img src="../assets/images/icon-success.svg" class="check" alt="Check mark">
+                    <h1>Thanks for subscribing!</h1>
+                    <P>
+                        A confirmation email has been sent to<br>
+                        <span class="email-adress"></span>
+                        Please open it and click<br>
+                        the button inside to confirm your subscription.
+                    </P>
+                    <button onclick="backPage()">Dismiss Message</button>
+                </section>
+            </article>
+        </div>
+    </main>
+    <script>
+        function backPage() {
+            window.location.href='../index.html'
+        }
+    </script>
+</body>
+</html>
